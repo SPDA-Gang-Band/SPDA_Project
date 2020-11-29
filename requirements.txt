@@ -27,3 +27,4 @@ six==1.15.0               # via packaging
 sqlparse==0.4.1           # via django
 uritemplate==3.0.1        # via coreapi, drf-yasg
 urllib3==1.26.2           # via requests
+whitenoise
