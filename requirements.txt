@@ -30,3 +30,4 @@ urllib3==1.26.2           # via requests
 whitenoise
 gunicorn
 django-heroku
+django-cors-headers
