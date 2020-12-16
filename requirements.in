@@ -2,3 +2,6 @@ Django
 django
 djangorestframework
 drf-yasg
+gunicorn
+django-cors-headers
+django-heroku

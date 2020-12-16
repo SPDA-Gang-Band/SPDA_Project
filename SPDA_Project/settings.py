@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'corsheaders',
 
     'courses',
+    'users',
 
 ]
 
@@ -133,3 +134,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 django_heroku.settings(locals())
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'users.authentication.LoginAuthentication',
+    ),
+}
+
+AUTH_USER_MODEL = 'users.User'
