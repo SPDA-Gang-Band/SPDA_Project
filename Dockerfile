@@ -31,7 +31,7 @@ RUN pip install cffi
 COPY . .
 
 COPY ./requirements.txt .
-RUN pip wheel --no-cache-dir --no-deps --wheel-dir /usr/src/backend/wheels -r requirements.txt
+RUN pip wheel --no-cache-dir --no-deps --wheel-dir /usr/src/SPDA_Project/wheels -r requirements.txt
 
 
 #########
