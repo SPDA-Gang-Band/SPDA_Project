@@ -12,3 +12,4 @@ class CourseRequest(models.Model):
     start_date = models.CharField(_('start date'), max_length=256, blank=True)
     study_quarter = models.IntegerField(_('study quarter'), default=1)
     description = models.TextField(_('description'), blank=True)
+    status = models.CharField(_('status'), max_length=256, default='Ждёт одобрения')
