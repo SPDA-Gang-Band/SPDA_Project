@@ -24,6 +24,7 @@ markupsafe==1.1.1         # via jinja2
 packaging==20.4           # via drf-yasg
 psycopg2==2.8.6           # via django-heroku
 pyparsing==2.4.7          # via packaging
+python-decouple==3.3      # via -r requirements.in
 pytz==2020.4              # via django
 requests==2.25.0          # via coreapi
 ruamel.yaml.clib==0.2.2   # via ruamel.yaml
