@@ -6,7 +6,7 @@
 FROM python:3.8.5-alpine as builder
 
 # set work directory
-WORKDIR /usr/src/backend
+WORKDIR /usr/src/SPDA_Project
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
