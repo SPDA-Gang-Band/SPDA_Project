@@ -1,0 +1,1 @@
+web: gunicorn SPDA_Project.wsgi --log-file -

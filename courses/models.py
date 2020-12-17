@@ -3,7 +3,11 @@ from django.utils.translation import gettext_lazy as _
 
 
 # Create your models here.
+from users.models import User
+
+
 class CourseRequest(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_('user'), null=True, blank=True)
     surname = models.CharField(_('surname'), max_length=256)
     name = models.CharField(_('name'), max_length=256)
     course_name = models.CharField(_('course name'), max_length=256)
