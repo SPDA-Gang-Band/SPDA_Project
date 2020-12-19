@@ -18,6 +18,6 @@ class LoginAuthentication(authentication.BaseAuthentication):
         name, surname = auth_header.split(" ")[1:3]
         if name is None or surname is None or name == '' or surname == '':
             raise InvalidAuthToken("Name or surname is empty")
-        user, created = User.objects.get_or_create(first_name=name, last_name=surname)
+        user, created = User.objects.get_or_create(username=name + surname, first_name=name, last_name=surname)
 
         return (user, f'{name} {surname}')
