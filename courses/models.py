@@ -17,3 +17,6 @@ class CourseRequest(models.Model):
     study_quarter = models.IntegerField(_('study quarter'), default=1)
     description = models.TextField(_('description'), blank=True)
     status = models.CharField(_('status'), max_length=256, default='waiting')
+
+    def __str__(self):
+        return f'Name: {self.surname} {self.name} Course: {self.course_name} Start date: {self.start_date}'

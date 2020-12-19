@@ -5,3 +5,4 @@ drf-yasg
 gunicorn
 django-cors-headers
 django-heroku
+django-filter
