@@ -6,3 +6,4 @@ gunicorn
 django-cors-headers
 django-heroku
 python-decouple
+django-filter
