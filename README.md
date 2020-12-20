@@ -15,3 +15,18 @@ Python 3.8
 
 ## Endpoints description
 * `http://127.0.0.1:8000/swagger/`
+
+## To run server locally use this command
+* `py manage.py runserver`
+### Run database migrations
+* `py manage.py migrate`
+
+### Database configuration
+If you don't want to configure postgresql database. You can comment DATABASES in settings.py and uncomment DATABASES below. Now server will use sqlite 
+
+## Authentication is done using a header
+Header should look like that: `fullname 'user_name' 'user_surname'`
+If there is no user with this name new user will be created
+
+## Deploy
+For deployment we use docker-compose.
