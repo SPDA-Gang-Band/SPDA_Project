@@ -29,4 +29,6 @@ Header should look like that: `fullname 'user_name' 'user_surname'`
 If there is no user with this name new user will be created
 
 ## Deploy
-For deployment we use docker-compose.
+For deployment we use docker-compose. To run this project using dockeryou need:
+1. clone both backend and frontend repositories in one directory
+2. move file docker-compose.
